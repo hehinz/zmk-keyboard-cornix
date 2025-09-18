@@ -148,9 +148,9 @@
 
             bindings = <
 &kp ESC     &kp Q          &kp W         &kp E                &kp R          &kp T                    &kp Y      &kp U                &kp I           &kp O         &kp P             &kp UNDER
-&kp MINUS   &hm_l LGUI A   &hm_l LALT S  &hm_shift_l LSHIFT D &hm_l LCTRL F  &kp G                    &kp H      &hm_r RCTRL J  &hm_shift_r RSHFT K   &hm_r LALT L  &hm_r RGUI SEMI   &kp SQT
+&kp MINUS   &hm_l LGUI A   &hm_l LALT S  &hm_shift_l LSHFT D &hm_l LCTRL F  &kp G                    &kp H      &hm_r RCTRL J  &hm_shift_r RSHFT K   &hm_r LALT L  &hm_r RGUI SEMI   &kp SQT
 &caps_word  &hm_l LGUI Z   &kp X         &kp C                &kp V          &kp B   &none  &none     &kp N      &kp M                &kp COMMA       &kp DOT       &kp FSLH          &kp BACKSPACE
-&none       &none          &none         &lt 2 TAB     &lt 1 SPACE          &lt 3 ESC                &kp ENTER  &lt 1 BACKSPACE      &kp DEL         &none         &none             &none
+&none       &none          &none         &lt 2 TAB            &lt 1 SPACE    &lt 3 ESC                &kp ENTER  &lt 1 BACKSPACE      &kp DEL         &none         &none             &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
@@ -172,10 +172,10 @@
             display-name = "Navigation";
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5                         &kp F6    &kp F7     &kp F8     &kp F9    &kp F10  &kp F11
-&trans  &kp N5  &kp N4  &kp N3   &kp N2  &kp N1                         &kp BSPC  &kp MINUS  &kp EQUAL  &kp PLUS  &kp DQT  &kp F12
-&trans  &kp N6  &kp N7  &kp N8   &kp N9  &kp N0         &trans  &trans  &kp TAB   &kp INS    &kp HOME   &kp END   &trans   &trans
-&none   &none   &none   &kp TAB  &trans  &kp BACKSPACE                  &trans    &trans     &kp N3     &none     &none    &none
+&trans  &none    &none    &none     &none   &none                          &kp HOME  &kp PG_DN  &kp PG_UP  &kp END   &none    &none
+&trans  &kp LGUI &kp LALT &kp LSHFT &LCTRL  &none                          &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT &none    &none
+&trans  &none    &none    &none     &none   &none       &trans  &trans     &none     &none      &none      &none     &none    &none
+&none   &none    &none    &trans    &trans  &trans                         &trans    &trans     &none      &none     &none    &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
