@@ -217,10 +217,10 @@
         Debug_layer {
             display-name = "Debug";
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &none        &none  &none   &none  &none  &none
-&to 0      &none        &none        &none        &none        &none                         &none        &none  &none   &none  &none  &none
-&tog 5     &none        &none        &none        &none        &bootloader   &trans  &trans  &bootloader  &none  &none   &none  &none  &none
-&none      &none        &none        &none        &none        &none                         &none        &none  &none   &none  &none  &none
+&bt BT_CLR   &none    &none    &none    &none    &none                          &none    &none   &none   &none   &none   &bootloader
+&bt BT_SEL 0 &none    &none    &none    &none    &none                          &none    &none   &none   &none   &none   &none
+&bt BT_SEL 1 &none    &none    &none    &none    &none       &none  &none       &none    &none   &none   &none   &none   &tog 5
+&bt BT_SEL 2 &none    &none    &none    &none    &none                          &none    &none   &none   &none   &none   &none
             >;
         };
     };
