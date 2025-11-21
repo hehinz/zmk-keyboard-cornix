@@ -18,7 +18,7 @@
 // quick tapping for shift
 
 #define HM_TAPPING_TERM_FAST 200
-#define HM_PRIOR_IDLE 70
+#define HM_PRIOR_IDLE 100
 #define BASE 0
 #define WIN 1
 #define LOWER 2
@@ -125,6 +125,7 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <200>;
+            reequire-prior-idle-ms = <HM_PRIOR_IDLE>;
         };
 
         lt: layer_tap {
@@ -132,7 +133,7 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
 
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <200>;
         };
